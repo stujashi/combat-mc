@@ -1,0 +1,10 @@
+(
+    mouse_sensitivity: 0.0022,
+    eye_height: 1.62,
+    max_pitch_degrees: 89.0,
+    move_speed: 6.5,
+    jump_speed: 8.5,
+    gravity: 24.0,
+    half_width: 0.3,
+    height: 1.8,
+)

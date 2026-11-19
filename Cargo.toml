@@ -1,0 +1,16 @@
+[package]
+name = "combat-mc"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+bevy = "0.20.1"
+ron = "0.12"
+serde = { version = "1", features = ["derive"] }
+
+# Compile Bevy and other dependencies with optimizations so the game runs smoothly in dev mode.
+[profile.dev]
+opt-level = 1
+
+[profile.dev.package."*"]
+opt-level = 3
