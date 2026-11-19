@@ -35,6 +35,8 @@ pub struct Combatant {
     pub state: CombatState,
     pub state_elapsed: f32,
     pub state_duration: f32,
+    /// Prevents a single swing from dealing damage multiple ticks in a row.
+    pub hit_this_swing: bool,
 }
 
 impl Combatant {
@@ -43,6 +45,7 @@ impl Combatant {
         self.state = next;
         self.state_elapsed = 0.0;
         self.state_duration = duration;
+        self.hit_this_swing = false;
     }
 
     /// Returns progress through the current state from `0.0` (start) to `1.0` (end).

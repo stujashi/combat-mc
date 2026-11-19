@@ -1,0 +1,7 @@
+(
+    max_health: 100.0,
+    respawn_secs: 2.0,
+    hit_flash_secs: 0.14,
+    half_width: 0.4,
+    height: 1.8,
+)

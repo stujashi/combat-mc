@@ -5,7 +5,6 @@ use serde::Deserialize;
 
 /// Balance and timing values for a melee weapon, loaded from a RON file.
 #[derive(Resource, Deserialize, Debug, Clone)]
-#[allow(dead_code)]
 pub struct WeaponData {
     pub name: String,
     pub damage: f32,
