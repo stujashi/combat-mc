@@ -1,3 +1,4 @@
+mod combat;
 mod player;
 mod world;
 
@@ -13,6 +14,6 @@ fn main() {
             ..default()
         }))
         .insert_resource(ClearColor(Color::srgb(0.53, 0.81, 0.92)))
-        .add_plugins((world::WorldPlugin, player::PlayerPlugin))
+        .add_plugins((world::WorldPlugin, player::PlayerPlugin, combat::CombatPlugin))
         .run();
 }

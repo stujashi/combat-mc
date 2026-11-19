@@ -1,0 +1,8 @@
+(
+    name: "Iron Sword",
+    damage: 25.0,
+    reach: 3.0,
+    windup_secs: 0.16,
+    active_secs: 0.12,
+    recovery_secs: 0.24,
+)

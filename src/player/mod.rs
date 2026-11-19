@@ -54,7 +54,7 @@ fn spawn_player(mut commands: Commands, config: Res<PlayerConfig>) {
     ));
 }
 
-fn toggle_cursor_lock(
+pub fn toggle_cursor_lock(
     mut cursor: Single<&mut CursorOptions, With<PrimaryWindow>>,
     mouse_buttons: Res<ButtonInput<MouseButton>>,
     keys: Res<ButtonInput<KeyCode>>,
